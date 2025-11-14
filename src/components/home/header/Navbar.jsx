@@ -7,30 +7,30 @@ const Navbar = () => {
         A
       </div>
       <div className="d-flex items-center gap-2">
-        <div
+        <button
           style={{
             padding: "0.75rem 1rem",
           }}
           className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center hover:text-[#555a63] text-[#6B7280]"
         >
           Skills
-        </div>
-        <div
+        </button>
+        <button
           style={{
             padding: "0.75rem 1rem",
           }}
           className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center hover:text-[#555a63] text-[#6B7280]"
         >
           Projects
-        </div>
-        <div
+        </button>
+        <button
           style={{
             padding: "0.75rem 1rem",
           }}
           className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center border hover:text-[#221c74] border-[#3730A3] rounded-lg text-[#3730A3]"
         >
           Hire me
-        </div>
+        </button>
       </div>
     </div>
   );

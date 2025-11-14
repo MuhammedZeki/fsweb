@@ -10,7 +10,7 @@ const App = () => {
           padding: "1rem",
           margin: "0 auto",
         }}
-        className=" w-[80%] d-flex-col gap-8"
+        className=" lg:w-[80%] d-flex-col gap-8 w-full"
       >
         <Home />
         <Content />

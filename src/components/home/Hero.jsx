@@ -6,10 +6,10 @@ const Hero = () => {
       style={{
         marginTop: "2rem",
       }}
-      className=" d-flex items-center justify-between"
+      className=" lg:flex lg:flex-row lg:items-center lg:justify-between flex-col gap-4"
     >
-      <div className="w-1/2 d-flex-col gap-2">
-        <div className="d-flex items-center gap-2">
+      <div className="lg:w-1/2 lg:flex-col gap-2 w-full">
+        <div className="flex lg:flex-row items-center gap-2">
           <span className="w-24 border border-[#3730A3]"></span>
           <p
             style={{
@@ -20,8 +20,8 @@ const Hero = () => {
             Almila Su
           </p>
         </div>
-        <div className="d-flex-col gap-8">
-          <div className="d-flex-col gap-1 text-[#1F2937] font-inter font-bold text-7xl">
+        <div className="flex-col gap-8">
+          <div className="flex-col gap-1 text-[#1F2937] font-inter font-bold text-7xl">
             <p>Creative thinker</p>
             <p>Minimalism lover</p>
           </div>
@@ -30,7 +30,7 @@ const Hero = () => {
             Developer who to craft solid and scalable frontend products with
             great user experiences. Let’s shake hands with me.
           </p>
-          <div className="d-flex items-center gap-4">
+          <div className="flex lg:flex-row items-center gap-4">
             <button
               style={{
                 padding: "0.75rem 1rem",
@@ -68,7 +68,7 @@ const Hero = () => {
         style={{
           padding: "1rem 2rem",
         }}
-        className="w-1/2"
+        className="lg:w-1/2 w-full"
       >
         <img src="/pc.png" alt="pc" className="rounded-4xl" />
       </div>

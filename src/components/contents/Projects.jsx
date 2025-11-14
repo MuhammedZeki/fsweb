@@ -1,5 +1,3 @@
-import React from "react";
-
 const Projects = () => {
   return (
     <div
@@ -7,14 +5,14 @@ const Projects = () => {
         padding: "2rem 0",
         marginTop: "3rem",
       }}
-      className="border-t border-[#BAB2E7] d-flex-col gap-6"
+      className="border-t border-[#BAB2E7] flex-col gap-6"
     >
       <span className="font-inter font-semibold text-5xl text-[#1F2937]">
         Projects
       </span>
 
-      <div className="d-flex items-center justify-between gap-4">
-        <div className="max-w-90 d-flex-col gap-2">
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-between gap-4 flex-col">
+        <div className="max-w-90 flex-col gap-2">
           <div>
             <img src="/resim1.png" className="w-80" alt="resim" />
           </div>
@@ -63,7 +61,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="max-w-90 d-flex-col gap-2">
+        <div className="max-w-90 flex-col gap-2">
           <div>
             <img src="/resim1.png" className="w-80" alt="resim" />
           </div>
@@ -112,7 +110,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="max-w-90 d-flex-col gap-2">
+        <div className="max-w-90 flex-col gap-2">
           <div>
             <img src="/resim1.png" className="w-80" alt="resim" />
           </div>

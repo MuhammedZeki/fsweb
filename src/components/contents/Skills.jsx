@@ -1,13 +1,11 @@
-import React from "react";
-
 const Skills = () => {
   return (
-    <div className="d-flex-col gap-8">
+    <section className="flex-col lg:gap-12">
       <span className="font-inter font-semibold text-5xl text-[#1F2937]">
         Skills
       </span>
-      <div className="d-flex gap-24 items-center ">
-        <div className="d-flex-col flex-1 gap-6">
+      <div className="lg:flex lg:flex-row lg:gap-20 lg:items-center flex-col gap-7 ">
+        <div className="flex-col  gap-6">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
             Javascript
           </span>
@@ -19,7 +17,7 @@ const Skills = () => {
             animi officia quisquam!
           </p>
         </div>
-        <div className="d-flex-col flex-1 gap-6">
+        <div className="flex-col  gap-6">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
             Javascript
           </span>
@@ -28,7 +26,7 @@ const Skills = () => {
             officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="d-flex-col flex-1 gap-6">
+        <div className="flex-col  gap-6">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
             Javascript
           </span>
@@ -38,7 +36,7 @@ const Skills = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

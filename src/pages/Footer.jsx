@@ -6,18 +6,18 @@ const Footer = () => {
           padding: "1rem",
           margin: "1rem auto",
         }}
-        className="d-flex-col gap-12 w-[90%]"
+        className="flex-col gap-12 w-[90%]"
       >
         <div
           style={{ padding: "2rem 0" }}
-          className="d-flex-col gap-2 font-inter font-semibold text-5xl leading-[125%] text-[#1F2937]"
+          className="flex-col gap-2 font-inter font-semibold text-5xl leading-[125%] text-[#1F2937]"
         >
           <p>Let’s work together on</p>
           <p>your next product.</p>
         </div>
         <div
           style={{ padding: "2rem 0" }}
-          className="d-flex items-center justify-between"
+          className="lg:flex lg:flex-row lg:items-center lg:justify-between flex-col gap-6"
         >
           <div className="d-flex items-center gap-2 cursor-pointer">
             👉

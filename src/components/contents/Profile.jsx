@@ -7,17 +7,17 @@ const Profile = () => {
         padding: "2rem 0",
         marginTop: "3rem",
       }}
-      className="border-t border-[#BAB2E7] d-flex-col gap-6"
+      className="border-t border-[#BAB2E7] flex-col gap-6"
     >
       <span className="font-inter font-semibold text-5xl text-[#1F2937]">
         Profile
       </span>
-      <div className="d-flex items-start gap-16">
-        <div className="w-2/5 d-flex-col gap-4">
+      <div className="lg:flex lg:flex-row lg:items-start gap-16 flex-col items-center">
+        <div className="w-2/5 flex-col gap-4">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
             Profile
           </span>
-          <div className="d-flex-col gap-4">
+          <div className="flex-col gap-4">
             <div className="d-flex items-center justify-start gap-24 ">
               <span className="font-inter font-semibold text-lg text-black">
                 Doğum tarihi
@@ -52,7 +52,7 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="w-3/5  d-flex-col gap-4">
+        <div className="w-3/5  flex-col gap-4">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
             About
           </span>

@@ -3,7 +3,7 @@ import Navbar from "./header/Navbar";
 
 const Header = () => {
   return (
-    <div className="border border-black d-flex-col gap-1 items-end">
+    <div className=" d-flex-col gap-1 items-end">
       <div className="w-[20%]">
         <ToggleMode />
       </div>

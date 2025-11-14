@@ -1,4 +1,5 @@
 import "./App.css";
+import Content from "./pages/Content";
 import Home from "./pages/Home";
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       className="border w-[90%] border-black"
     >
       <Home />
+      <Content />
     </div>
   );
 };

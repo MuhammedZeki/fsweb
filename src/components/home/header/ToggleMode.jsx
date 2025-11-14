@@ -1,7 +1,10 @@
 const ToggleMode = () => {
   return (
-    <section className="border border-red d-flex items-center gap-2">
-      <div className="d-flex gap-1 items-center ">
+    <section
+      style={{ padding: "0.75rem 0" }}
+      className="flex items-center justify-end gap-4 "
+    >
+      <div className="d-flex gap-2 items-center ">
         <div className="w-14 h-6 bg-[#4731D3] rounded-2xl relative cursor-pointer">
           <div className="absolute rounded-full w-4 h-4 bg-[#FFE86E] top-1 right-2"></div>
         </div>

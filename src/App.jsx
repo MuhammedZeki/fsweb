@@ -8,7 +8,7 @@ const App = () => {
         padding: "1rem",
         margin: "0 auto",
       }}
-      className="border w-[90%] border-black"
+      className=" w-[80%] d-flex-col gap-8"
     >
       <Home />
       <Content />

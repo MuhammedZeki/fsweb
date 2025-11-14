@@ -4,10 +4,9 @@ const Hero = () => {
   return (
     <div
       style={{
-        margin: "0 auto",
         marginTop: "2rem",
       }}
-      className=" w-[85%]  d-flex items-center justify-between"
+      className=" d-flex items-center justify-between"
     >
       <div className="w-1/2 d-flex-col gap-2">
         <div className="d-flex items-center gap-2">

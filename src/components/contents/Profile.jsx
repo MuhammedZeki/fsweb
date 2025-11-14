@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <div
       style={{
-        padding: "1rem 0",
+        padding: "2rem 0",
         marginTop: "3rem",
       }}
       className="border-t border-[#BAB2E7] d-flex-col gap-6"

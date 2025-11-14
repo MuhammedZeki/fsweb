@@ -2,11 +2,11 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="d-flex-col gap-6">
+    <div className="d-flex-col gap-8">
       <span className="font-inter font-semibold text-5xl text-[#1F2937]">
         Skills
       </span>
-      <div className="d-flex gap-4 items-center ">
+      <div className="d-flex gap-24 items-center ">
         <div className="d-flex-col flex-1 gap-6">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
             Javascript

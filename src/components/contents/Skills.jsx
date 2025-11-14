@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="d-flex-col gap-2">
+    <div className="d-flex-col gap-6">
       <span className="font-inter font-semibold text-5xl text-[#1F2937]">
         Skills
       </span>

@@ -7,7 +7,7 @@ const Footer = () => {
   const fetchData = data[lang];
   const { footerSection } = fetchData;
   return (
-    <footer className=" flex items-start   bg-[#F9F9F9]">
+    <footer className=" flex items-start bg-footer">
       <div
         style={{
           padding: "1rem",
@@ -17,7 +17,7 @@ const Footer = () => {
       >
         <div
           style={{ padding: "2rem 0" }}
-          className=" flex flex-col gap-2 font-inter font-semibold text-5xl leading-[125%] text-[#1F2937]"
+          className=" flex flex-col gap-2 font-inter font-semibold text-5xl leading-[125%] text-secondary"
         >
           {footerSection.title.map((item, i) => (
             <p key={i}>{item}</p>
@@ -35,7 +35,7 @@ const Footer = () => {
             </span>
           </div>
           <div className=" flex items-center gap-4 font-inter font-medium text-lg leading-[150%] tracking-[1%] ">
-            <span className="text-[#0A0A14]">{footerSection.links[0]}</span>
+            <span className="text-secondary">{footerSection.links[0]}</span>
             <span className="text-[#00AB6B]">{footerSection.links[1]}</span>
             <span className="text-[#0077B5]">{footerSection.links[2]}</span>
           </div>

@@ -1,26 +1,35 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../../hooks/LanguageContext";
+import { DarkContext } from "../../../hooks/DarkModeContext";
 
 const ToggleMode = () => {
+  const { darkMode, changeMode } = useContext(DarkContext);
   const { lang, changeLang } = useContext(LanguageContext);
+
   return (
-    <section
-      style={{ padding: "0.75rem 0" }}
-      className="flex items-center justify-end gap-4 "
-    >
-      <button className="d-flex gap-2 items-center ">
-        <div className="w-14 h-6 bg-[#4731D3] rounded-2xl relative cursor-pointer">
-          <div className="absolute rounded-full w-4 h-4 bg-[#FFE86E] top-1 right-2"></div>
+    <section className="flex items-center justify-end gap-4 py-3">
+      <button
+        onClick={() => changeMode(darkMode === "light" ? "dark" : "light")}
+        className="flex gap-2 items-center"
+      >
+        <div className="w-14 h-6 bg-toggle  rounded-2xl relative cursor-pointer">
+          <div
+            className={`absolute rounded-full w-4 h-4 bg-[#FFE86E] dark:bg-modeBgCircleDark top-1 transition-all duration-300 ${
+              darkMode === "dark" ? "right-2" : "left-2"
+            }`}
+          ></div>
         </div>
-        <span className="font-inter text-[#777777] text-sm font-bold tracking-[10%]">
+        <span className="font-inter text-tertiary text-sm font-bold tracking-[10%]">
           DARK MODE
         </span>
       </button>
-      <div className="border border-[#777777] h-5"></div>
+
+      <div className="border h-5 text-secondary"></div>
+
       <div>
         <button
           onClick={() => changeLang(lang === "en" ? "tr" : "en")}
-          className="font-inter text-[#4731D3] hover:text-[#7969e6] transform duration-300 cursor-pointer text-sm font-bold tracking-[10%]"
+          className="font-inter text-tertiary transition-colors duration-300 cursor-pointer text-sm font-bold tracking-[10%]"
         >
           {lang === "en" ? "Türkçe" : "English"}
         </button>

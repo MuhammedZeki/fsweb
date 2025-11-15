@@ -25,12 +25,12 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col gap-8">
-          <div className="flex-col gap-1 text-[#1F2937] font-inter font-bold text-7xl">
+          <div className="flex-col gap-1 text-secondary font-inter font-bold text-7xl">
             {heroSection.greeting.map((item, i) => (
               <p key={i}>{item}</p>
             ))}
           </div>
-          <p className="font-inter font-normal text-lg text-[#6B7280]">
+          <p className="font-inter font-normal text-lg text-tertiary">
             {heroSection.intro}
           </p>
           <div className="flex lg:flex-row items-center gap-4">
@@ -52,8 +52,8 @@ const Hero = () => {
                   }}
                   className="border cursor-pointer border-[#3730A3] hover:scale-102 transform duration-300  gap-2 rounded-lg d-flex items-center justify-center"
                 >
-                  <Icon className="w-6 h-6 text-[#3730A3]" />
-                  <span className="font-inter font-medium text-lg text-[#3730A3]">
+                  <Icon className="w-6 h-6 text-placeholder" />
+                  <span className="font-inter font-medium text-lg text-placeholder">
                     {item.text}
                   </span>
                 </button>

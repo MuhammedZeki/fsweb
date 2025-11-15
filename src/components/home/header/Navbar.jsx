@@ -5,11 +5,11 @@ const Navbar = () => {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <div className="d-flex items-center justify-between">
-      <div className="bg-[#EEEBFF] rotate-30 w-16 h-16 rounded-full d-flex items-center justify-center text-[#7B61FF] font-inter font-semibold text-2xl">
+    <div className="flex items-center justify-between">
+      <div className="bg-logo rotate-30 w-16 h-16 rounded-full flex items-center justify-center text-placeholder font-inter font-semibold text-2xl">
         A
       </div>
-      <div className="d-flex items-center gap-2">
+      <div className="flex items-center gap-2">
         <button
           onClick={() => {
             document
@@ -19,7 +19,7 @@ const Navbar = () => {
           style={{
             padding: "0.75rem 1rem",
           }}
-          className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center hover:text-[#555a63] text-[#6B7280]"
+          className="font-inter cursor-pointer font-medium text-lg flex items-center justify-center hover:text-[#555a63] text-primary"
         >
           {lang === "en" ? "Skills" : "Yetenekler"}
         </button>
@@ -32,7 +32,7 @@ const Navbar = () => {
           style={{
             padding: "0.75rem 1rem",
           }}
-          className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center hover:text-[#555a63] text-[#6B7280]"
+          className="font-inter cursor-pointer font-medium text-lg flex items-center justify-center hover:text-[#555a63] text-primary "
         >
           {lang === "en" ? "Projects" : "Projeler"}
         </button>
@@ -40,7 +40,7 @@ const Navbar = () => {
           style={{
             padding: "0.75rem 1rem",
           }}
-          className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center border hover:text-[#221c74] border-[#3730A3] rounded-lg text-[#3730A3]"
+          className="font-inter cursor-pointer font-medium text-lg flex items-center justify-center border hover:text-[#221c74] border-color rounded-lg text-primary"
         >
           {lang === "en" ? "Hire me" : "Beni işe al"}
         </button>

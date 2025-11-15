@@ -15,7 +15,7 @@ const Projects = () => {
       }}
       className="border-t border-[#BAB2E7] flex flex-col gap-10 "
     >
-      <span className="font-inter text-center lg:text-start font-semibold text-5xl text-[#1F2937]">
+      <span className="font-inter text-center lg:text-start font-semibold text-5xl text-secondary">
         {projectsSection.title}
       </span>
 
@@ -25,10 +25,10 @@ const Projects = () => {
             <div>
               <img src={project.img} className="w-80" alt="resim" />
             </div>
-            <span className="font-inter font-medium text-3xl text-[#4338CA]">
+            <span className="font-inter font-medium text-3xl text-placeholder">
               {project.sub_title}
             </span>
-            <p className="font-inter font-normal text-sm text-[#6B7280]">
+            <p className="font-inter font-normal text-sm text-tertiary">
               {project.sub_content}
             </p>
             <div className=" flex items-center gap-4">
@@ -39,7 +39,7 @@ const Projects = () => {
                     style={{
                       padding: "7px 1rem",
                     }}
-                    className="border border-[#3730A3] rounded-sm text-[#3730A3] font-inter font-medium text-sm"
+                    className="border border-[#3730A3] rounded-sm text-tag font-inter font-medium text-sm"
                   >
                     {lib}
                   </div>
@@ -50,7 +50,7 @@ const Projects = () => {
                 project.links.map((link, index) => (
                   <button
                     key={index}
-                    className="underline text-[#3730A3] cursor-pointer font-inter font-medium text-lg leading-4"
+                    className="underline text-tag cursor-pointer font-inter font-medium text-lg leading-4"
                   >
                     {link}
                   </button>

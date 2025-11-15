@@ -34,7 +34,7 @@ export const data = {
                 }
             ]
         },
-        ProjectsSection: {
+        projectsSection: {
             title: "Projects",
             projects: [
                 {
@@ -45,17 +45,23 @@ export const data = {
                     links: ["Github", "View Site"]
                 },
                 {
-                    sub_title: "React.Js",
-                    sub_content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    img: "/resim1.png",
+                    sub_title: "Workingtech",
+                    sub_content: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                    library: ["react", "redux", "axios"],
+                    links: ["Github", "View Site"]
                 },
                 {
-                    sub_title: "Node.Js",
-                    sub_content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                }
+                    img: "/resim1.png",
+                    sub_title: "Workingtech",
+                    sub_content: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                    library: ["react", "redux", "axios"],
+                    links: ["Github", "View Site"]
+                },
             ]
         }
         ,
-        FooterSection: {
+        footerSection: {
             title: ["Let’s work together on", "your next product."],
             links: ["Personal Blog", "Github", "Linkedin"],
             mail: "almilasucode@gmail.com"
@@ -96,7 +102,7 @@ export const data = {
                 }
             ]
         },
-        ProjectsSection: {
+        projectsSection: {
             title: "Projeler",
             projects: [
                 {
@@ -107,16 +113,22 @@ export const data = {
                     links: ["Github", "Siteyi Görüntüle"]
                 },
                 {
-                    sub_title: "React.Js",
-                    sub_content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    img: "/resim1.png",
+                    sub_title: "Random Jokes",
+                    sub_content: "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesini sağlayan, basit, özelleştirilebilir, minimal kuruluma sahip bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak sunulmaktadır. Git deposu sayesinde kod ve temalar üzerinde her türlü özelleştirme mümkündür.",
+                    library: ["react", "redux", "axios"],
+                    links: ["Github", "Siteyi Görüntüle"]
                 },
                 {
-                    sub_title: "Node.Js",
-                    sub_content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    img: "/resim1.png",
+                    sub_title: "Journey",
+                    sub_content: "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesini sağlayan, basit, özelleştirilebilir, minimal kuruluma sahip bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak sunulmaktadır. Git deposu sayesinde kod ve temalar üzerinde her türlü özelleştirme mümkündür.",
+                    library: ["react", "redux", "axios"],
+                    links: ["Github", "Siteyi Görüntüle"]
                 }
             ]
         },
-        FooterSection: {
+        footerSection: {
             title: ["Bir sonraki ürünün için", "birlikte çalışalım."],
             links: ["Kişisel Blog", "Github", "Linkedin"],
             mail: "almilasucode@gmail.com"

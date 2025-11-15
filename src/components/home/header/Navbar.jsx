@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../../hooks/LanguageContext";
 
 const Navbar = () => {
+  const { lang } = useContext(LanguageContext);
   return (
     <div className="d-flex items-center justify-between">
       <div className="bg-[#EEEBFF] rotate-30 w-16 h-16 rounded-full d-flex items-center justify-center text-[#7B61FF] font-inter font-semibold text-2xl">
@@ -13,7 +15,7 @@ const Navbar = () => {
           }}
           className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center hover:text-[#555a63] text-[#6B7280]"
         >
-          Skills
+          {lang === "en" ? "Skills" : "Yetenekler"}
         </button>
         <button
           style={{
@@ -21,7 +23,7 @@ const Navbar = () => {
           }}
           className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center hover:text-[#555a63] text-[#6B7280]"
         >
-          Projects
+          {lang === "en" ? "Projects" : "Projeler"}
         </button>
         <button
           style={{
@@ -29,7 +31,7 @@ const Navbar = () => {
           }}
           className="font-inter cursor-pointer font-medium text-lg d-flex items-center justify-center border hover:text-[#221c74] border-[#3730A3] rounded-lg text-[#3730A3]"
         >
-          Hire me
+          {lang === "en" ? "Hire me" : "Beni işe al"}
         </button>
       </div>
     </div>

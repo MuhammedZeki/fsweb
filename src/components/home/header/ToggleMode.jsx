@@ -20,13 +20,10 @@ const ToggleMode = () => {
       <div>
         <button
           onClick={() => changeLang(lang === "en" ? "tr" : "en")}
-          className="font-inter text-[#4731D3] text-sm font-bold tracking-[10%]"
+          className="font-inter text-[#4731D3] hover:text-[#7969e6] transform duration-300 cursor-pointer text-sm font-bold tracking-[10%]"
         >
           {lang === "en" ? "Türkçe" : "English"}
         </button>
-        <span className="font-inter text-[#777777] text-sm font-bold tracking-[10%]">
-          '{lang === "en" ? "ye geç" : ""}
-        </span>
       </div>
     </section>
   );

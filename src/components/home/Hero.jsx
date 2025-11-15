@@ -1,12 +1,10 @@
-import { useContext, useState } from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { useContext } from "react";
 import { data, icons } from "../../../data";
 import { LanguageContext } from "../../hooks/LanguageContext";
 const Hero = () => {
   const { lang } = useContext(LanguageContext);
   const fetchData = data[lang];
-  const { heroSection, skillsSection, ProjectsSection, FooterSection } =
-    fetchData;
+  const { heroSection } = fetchData;
   return (
     <div
       style={{

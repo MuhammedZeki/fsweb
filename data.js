@@ -45,14 +45,14 @@ export const data = {
                     links: ["Github", "View Site"]
                 },
                 {
-                    img: "/resim1.png",
+                    img: "/resim2.png",
                     sub_title: "Workingtech",
                     sub_content: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
                     library: ["react", "redux", "axios"],
                     links: ["Github", "View Site"]
                 },
                 {
-                    img: "/resim1.png",
+                    img: "/resim3.png",
                     sub_title: "Workingtech",
                     sub_content: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
                     library: ["react", "redux", "axios"],
@@ -113,14 +113,14 @@ export const data = {
                     links: ["Github", "Siteyi Görüntüle"]
                 },
                 {
-                    img: "/resim1.png",
+                    img: "/resim2.png",
                     sub_title: "Random Jokes",
                     sub_content: "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesini sağlayan, basit, özelleştirilebilir, minimal kuruluma sahip bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak sunulmaktadır. Git deposu sayesinde kod ve temalar üzerinde her türlü özelleştirme mümkündür.",
                     library: ["react", "redux", "axios"],
                     links: ["Github", "Siteyi Görüntüle"]
                 },
                 {
-                    img: "/resim1.png",
+                    img: "/resim3.png",
                     sub_title: "Journey",
                     sub_content: "Kullanıcıların hangi çerezleri kabul edeceğini veya reddedeceğini seçmesini sağlayan, basit, özelleştirilebilir, minimal kuruluma sahip bir çerez eklentisi. Bu, vanilla JS, SCSS ve Parcel Bundler ile oluşturuldu ve NPM paketi olarak sunulmaktadır. Git deposu sayesinde kod ve temalar üzerinde her türlü özelleştirme mümkündür.",
                     library: ["react", "redux", "axios"],

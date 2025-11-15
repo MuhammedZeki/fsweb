@@ -14,13 +14,13 @@ const ToggleMode = () => {
       >
         <div className="w-14 h-6 bg-toggle  rounded-2xl relative cursor-pointer">
           <div
-            className={`absolute rounded-full w-4 h-4 bg-[#FFE86E] dark:bg-modeBgCircleDark top-1 transition-all duration-300 ${
+            className={`absolute rounded-full w-4 h-4 bg-[#FFE86E] top-1 transition duration-700 ease-in-out ${
               darkMode === "dark" ? "right-2" : "left-2"
             }`}
           ></div>
         </div>
         <span className="font-inter text-tertiary text-sm font-bold tracking-[10%]">
-          DARK MODE
+          {darkMode === "dark" ? "Light Mode" : "Dark Mode"}
         </span>
       </button>
 

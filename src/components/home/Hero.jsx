@@ -12,7 +12,7 @@ const Hero = () => {
       }}
       className=" lg:flex lg:flex-row lg:items-center lg:justify-between flex-col gap-4"
     >
-      <div className="lg:w-1/2 lg:flex-col gap-2 w-full">
+      <div className="lg:w-1/2 flex flex-col gap-6 w-full">
         <div className="flex lg:flex-row items-center gap-2">
           <span className="w-24 border border-[#3730A3]"></span>
           <p
@@ -24,7 +24,7 @@ const Hero = () => {
             {heroSection.name}
           </p>
         </div>
-        <div className="flex-col gap-8">
+        <div className="flex flex-col gap-8">
           <div className="flex-col gap-1 text-[#1F2937] font-inter font-bold text-7xl">
             {heroSection.greeting.map((item, i) => (
               <p key={i}>{item}</p>
@@ -64,7 +64,7 @@ const Hero = () => {
       </div>
       <div
         style={{
-          padding: "1rem 2rem",
+          padding: "3rem 2rem",
         }}
         className="lg:w-1/2 w-full"
       >

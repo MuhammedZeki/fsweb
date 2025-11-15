@@ -8,19 +8,20 @@ const Projects = () => {
   const { projectsSection } = fetchData;
   return (
     <div
+      id="projects"
       style={{
         padding: "2rem 0",
         marginTop: "3rem",
       }}
-      className="border-t border-[#BAB2E7] flex-col gap-6"
+      className="border-t border-[#BAB2E7] flex flex-col gap-10 "
     >
-      <span className="font-inter font-semibold text-5xl text-[#1F2937]">
+      <span className="font-inter text-center lg:text-start font-semibold text-5xl text-[#1F2937]">
         {projectsSection.title}
       </span>
 
-      <div className="lg:flex lg:flex-row lg:items-center lg:justify-between gap-4 flex-col">
+      <div className="lg:flex lg:flex-row  lg:justify-between gap-12 flex flex-col items-center">
         {projectsSection.projects.map((project, i) => (
-          <div key={i} className="max-w-90 flex-col gap-2">
+          <div key={i} className="max-w-90 flex flex-col gap-6">
             <div>
               <img src={project.img} className="w-80" alt="resim" />
             </div>
@@ -30,7 +31,7 @@ const Projects = () => {
             <p className="font-inter font-normal text-sm text-[#6B7280]">
               {project.sub_content}
             </p>
-            <div className="d-flex items-center gap-4">
+            <div className=" flex items-center gap-4">
               {project.library &&
                 project.library.map((lib, index) => (
                   <div
@@ -44,7 +45,7 @@ const Projects = () => {
                   </div>
                 ))}
             </div>
-            <div className="d-flex items-center justify-between ">
+            <div className=" flex items-center justify-between ">
               {project.links &&
                 project.links.map((link, index) => (
                   <button

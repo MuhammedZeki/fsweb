@@ -3,6 +3,7 @@ import { LanguageContext } from "../../../hooks/LanguageContext";
 
 const Navbar = () => {
   const { lang } = useContext(LanguageContext);
+
   return (
     <div className="d-flex items-center justify-between">
       <div className="bg-[#EEEBFF] rotate-30 w-16 h-16 rounded-full d-flex items-center justify-center text-[#7B61FF] font-inter font-semibold text-2xl">
@@ -10,6 +11,11 @@ const Navbar = () => {
       </div>
       <div className="d-flex items-center gap-2">
         <button
+          onClick={() => {
+            document
+              .getElementById("projects")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
           style={{
             padding: "0.75rem 1rem",
           }}
@@ -18,6 +24,11 @@ const Navbar = () => {
           {lang === "en" ? "Skills" : "Yetenekler"}
         </button>
         <button
+          onClick={() => {
+            document
+              .getElementById("projects")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
           style={{
             padding: "0.75rem 1rem",
           }}

@@ -1,50 +1,53 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../hooks/LanguageContext";
 
 const Profile = () => {
+  const { lang } = useContext(LanguageContext);
+
   return (
     <div
       style={{
         padding: "2rem 0",
         marginTop: "3rem",
       }}
-      className="border-t border-[#BAB2E7] flex-col gap-6"
+      className="border-t border-[#BAB2E7] flex flex-col gap-10 items-center lg:items-start"
     >
       <span className="font-inter font-semibold text-5xl text-[#1F2937]">
-        Profile
+        {lang === "en" ? "Profile" : "Profil"}
       </span>
-      <div className="lg:flex lg:flex-row lg:items-start gap-16 flex-col items-center">
-        <div className="w-2/5 flex-col gap-4">
+
+      <div className="lg:flex lg:flex-row lg:items-start gap-16 flex flex-col items-center">
+        <div className="w-2/5 flex flex-col gap-6">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
-            Profile
+            {lang === "en" ? "Profile" : "Profil"}
           </span>
-          <div className="flex-col gap-4">
-            <div className="d-flex items-center justify-start gap-24 ">
+
+          <div className="flex items-start gap-16">
+            <div className="flex flex-col items-start gap-4">
               <span className="font-inter font-semibold text-lg text-black">
-                Doğum tarihi
+                {lang === "en" ? "Date of Birth" : "Doğum Tarihi"}
               </span>
-              <span className="font-inter font-normal text-lg text-black">
-                24.03.1996
+              <span className="font-inter font-semibold text-lg text-black">
+                {lang === "en" ? "City" : "İkamet Şehri"}
+              </span>
+              <span className="font-inter font-semibold text-lg text-black">
+                {lang === "en" ? "Education" : "Eğitim Durumu"}
+              </span>
+              <span className="font-inter font-semibold text-lg text-black">
+                {lang === "en" ? "Preferred Role" : "Tercih Ettiği Rol"}
               </span>
             </div>
-            <div className="d-flex items-center justify-start gap-25 ">
-              <span className="font-inter font-semibold text-lg text-black">
-                İkamet Şehri
+            <div className="flex flex-col items-start gap-4">
+              <span className="font-inter font-normal text-lg text-black">
+                24.03.1996
               </span>
               <span className="font-inter font-normal text-lg text-black">
                 Ankara
               </span>
-            </div>
-            <div className="d-flex items-center justify-start gap-20 ">
-              <span className="font-inter font-semibold text-lg text-black">
-                Eğitim Durumu
-              </span>
               <span className="font-inter font-normal text-lg text-black">
-                Hacettepe Ünv. Biyoloji Lisans, 2016
-              </span>
-            </div>
-            <div className="d-flex items-center justify-start gap-19 ">
-              <span className="font-inter font-semibold text-lg text-black">
-                Tercih Ettiği Rol
+                {lang === "en"
+                  ? "Hacettepe University Biology, 2016"
+                  : "Hacettepe Ünv. Biyoloji Lisans, 2016"}
               </span>
               <span className="font-inter font-normal text-lg text-black">
                 FrontEnd, UI
@@ -52,17 +55,16 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="w-3/5  flex-col gap-4">
+
+        <div className="w-3/5 flex flex-col gap-4">
           <span className="font-inter font-medium text-3xl text-[#4338CA]">
-            About
+            {lang === "en" ? "About" : "Hakkında"}
           </span>
-          <p className="font-inter font-normal text-lg leading-[150%] tex-[#6B7280]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-            amet laudantium et exercitationem. Quod expedita doloribus velit
-            temporibus eaque. Eveniet ea, maiores esse quibusdam, ad inventore
-            placeat velit neque quia minima iusto? Ut, id rerum. Ea minima
-            temporibus molestias facere. Laudantium voluptate reprehenderit
-            libero dolore ipsa fugit earum excepturi sapiente.
+
+          <p className="font-inter font-normal text-lg leading-[150%] text-[#6B7280]">
+            {lang === "en"
+              ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet laudantium et exercitationem. Quod expedita doloribus velit temporibus eaque."
+              : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet laudantium et exercitationem. Quod expedita doloribus velit temporibus eaque."}
           </p>
         </div>
       </div>

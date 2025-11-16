@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="bg-logo rotate-30 w-16 h-16 rounded-full flex items-center justify-center text-placeholder font-inter font-semibold text-2xl">
         A
       </div>
-      <div className="flex items-center gap-2">
+      <nav className="flex items-center gap-2">
         <button
           onClick={() => {
             document
@@ -44,7 +44,7 @@ const Navbar = () => {
         >
           {lang === "en" ? "Hire me" : "Beni işe al"}
         </button>
-      </div>
+      </nav>
     </div>
   );
 };

@@ -40,7 +40,7 @@ const Hero = () => {
               }}
               className="bg-[#3730A3] hover:bg-[#5952b9] hover:scale-102 transform duration-300 cursor-pointer rounded-lg text-white font-inter font-medium text-lg"
             >
-              Hire Me
+              {lang === "en" ? "Hire me" : "Beni işe al"}
             </button>
             {heroSection.socials.map((item, i) => {
               const Icon = icons[item.logo];

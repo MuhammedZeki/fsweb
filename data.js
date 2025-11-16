@@ -134,7 +134,6 @@ export const data = {
             mail: "almilasucode@gmail.com"
         }
     }
-
 }
 export const icons = {
     github: FaGithub,

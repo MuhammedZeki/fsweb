@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const DarkContext = createContext();
 
 export const DarkContextProvider = ({ children }) => {

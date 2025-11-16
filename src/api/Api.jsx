@@ -10,7 +10,7 @@ const Api = () => {
   } = useQuery({
     queryKey: ["posts"],
     queryFn: async () => {
-      const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
+      const res = await axios.get("https://jsonplaceholder.typicode.com/posts"); //2 3
       return res.data;
     },
   });
@@ -28,6 +28,9 @@ const Api = () => {
     onSuccess: () => {
       toast.success("Başaryıla post edildi");
       queryClient.invalidateQueries(["posts"]);
+    },
+    onError: (err) => {
+      toast.error("Hata" + err);
     },
   });
   if (isPending) return <p>Loading...</p>;

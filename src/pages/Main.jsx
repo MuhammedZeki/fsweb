@@ -1,6 +1,7 @@
 import Home from "./Home";
 import Content from "./Content";
 import Footer from "./Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
         <Content />
       </div>
       <Footer />
+      <ScrollToTop />
     </>
   );
 };
